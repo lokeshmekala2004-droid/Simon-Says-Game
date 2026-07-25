@@ -1,0 +1,84 @@
+body{
+    text-align: center;
+}
+
+.boxContainer{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+    width: 200px;
+    height: 200px;
+   border: 7px solid black;
+   border-radius: 20px;
+   margin: 2rem;
+    
+}
+.score-board{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.red{
+    background-color:  #ff4c4c;
+}
+.green{
+    background-color: #4cd964 ;
+}
+.yellow{
+    background-color: #ffd200;
+}
+.blue{
+    background-color:#007bff;
+}
+
+.flash{
+    background-color: white;
+}
+.userflash{
+    background-color: grey;
+}
+
+/*    RESPONSIVE DESIGN (For smaller screens) */
+
+/* For Tablets (Screens smaller than 768px wide) */
+@media (max-width: 768px) {
+    .btn {
+        width: 150px;
+        height: 150px;
+        margin: 1rem;
+    }
+    
+    .score-board {
+        font-size: 1.2rem;
+        padding: 15px 20px;
+    }
+}
+
+/* For Mobile Phones (Screens smaller than 480px wide) */
+@media (max-width: 480px) {
+    .btn {
+        width: 110px;
+        height: 110px;
+        margin: 0.5rem;
+        border: 4px solid black; /* Slightly thinner border for small buttons */
+        border-radius: 15px;
+    }
+    
+    .score-board {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Shrink the main title */
+        margin-top: 10px;
+    }
+    
+    h3 {
+        font-size: 1rem; /* Shrink the instructions */
+    }
+}
